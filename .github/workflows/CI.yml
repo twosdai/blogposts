@@ -24,8 +24,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - id: step0
-        run: eval `ssh-agent -s`
-      - id: step1
-        run: ssh-add <(echo "${{secrets.BLOGSSHKEY}}")
-      - id: step2
-        run: scp -r ./posts/ ${{secrets.BLOGUSERNAME}}:${{secrets.PATHTOPOSTS}}
+        run: eval `ssh-agent -s` && ssh-add <(echo "${{secrets.BLOGSSHKEY}}") &&  scp -r ./posts/ ${{secrets.BLOGUSERNAME}}:${{secrets.PATHTOPOSTS}}
