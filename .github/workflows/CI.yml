@@ -22,8 +22,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a set of commands using the runners shell
-      - id: step0
-        run: eval `ssh-agent -s` && ssh-add <(echo "${{secrets.BLOGSSHKEY}}"| base64 -d)
-      - id: step3
-        run: scp -r ./_posts/ root@157.230.82.135:/root/www/
+        # Runs a set of commands using the runners shell
+      - name: Copy file via scp
+        uses: appleboy/scp-action@master
+        env:
+          HOST: ${{ secrets.BLOGHOST }}
+          USERNAME: ${{ secrets.BLOGUSERNAME }}
+          PORT: ${{ secrets.BLOGPORT }}
+          KEY: ${{ secrets.BLOGUSERNAME }}
+          strip_components: 1
+        with:
+          source: "./_posts"
+          target: "/root/www/"
