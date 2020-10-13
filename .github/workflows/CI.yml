@@ -26,6 +26,6 @@ jobs:
       - id: step0
         run: eval `ssh-agent -s` && ssh-add <(echo "${{secrets.BLOGSSHKEY}}"| base64 -d)
       - id: step1
-        run: mkdir -p ~/.ssh && [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+        run: mkdir -p ~/.ssh && chmod 700 ~/.ssh && [[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
       - id: step2
         run: scp -r ./_posts/ root@157.230.82.135:/root/www/
