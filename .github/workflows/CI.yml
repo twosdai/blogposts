@@ -24,4 +24,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: copy posts
-        run: scp -i {{BLOGSSHKEY}} -r ./posts/ {{BLOGUSERNAME}}
+        run: scp -i {{BLOGSSHKEY}} -r ./posts/ {{BLOGUSERNAME}}:{{PATHTOPOSTS}}
