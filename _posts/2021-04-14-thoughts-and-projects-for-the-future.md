@@ -1,5 +1,3 @@
-# Thought and Projects for the future
-
 ## Preface
 
 Below I wanted to reflect on the past year and solidify some ideas I've been having on mental/physical health. I also wanted to start discussing a project I'm interested in sharing in a development blog sort of fashion.
