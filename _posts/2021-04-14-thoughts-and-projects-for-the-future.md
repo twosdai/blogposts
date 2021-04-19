@@ -6,9 +6,9 @@ Below I wanted to reflect on the past year and solidify some ideas I've been hav
 
 My last real [article](https://danielwasserlauf.com/2020/03/28/covid-19-mental-framing/) was at the beginning of the novel corona virus outbreak. Between then and now the world and I have changed. In reflection on working from home and living during quarantine I've come to realize some truths about myself:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Intense daily repetition and social isolation causes intrusive thoughts and eventually self destructive behavior
+    Intense daily repetition and social isolation causes intrusive thoughts and eventually self destructive behavior
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- To be truly independent we need to ask for help.
+    To be truly independent we need to ask for help.
 
 During the past fall and early winter I've gone through periods of intense isolation and repetition. Specifically I went months without really leaving my home except for food, and each day was spent doing the same routine of rolling out of bed getting on a computer, working, eating, and then sleeping. With some breaks to watch TV/slack-off, or as my parents would call it when I was growing up, "Vegetate." This cycle quickly caused me to have depressive behaviors. With nothing to break up the day, all of my daily actions would give me anxiety and I began to stress out over the smallest topics/details. Getting up and doing the same action each day became harder.
 
